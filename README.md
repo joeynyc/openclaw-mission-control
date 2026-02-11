@@ -49,8 +49,7 @@ This isn't a static dashboard. **Every panel is live. Every button does somethin
   <em>Dark glass UI with live gateway integration</em>
 </p>
 
-<!-- Add your screenshot here -->
-<!-- ![Mission Control](./screenshots/mission-control.png) -->
+![Sparks Mission Control](./screenshots/mission-control.png)
 
 ---
 
