@@ -8,8 +8,8 @@ struct ServicesCard: View {
             VStack(alignment: .leading, spacing: 6) {
                 serviceRow("Gateway", value: appState.services.gateway, good: appState.services.gateway == "Running")
                 serviceRow("Telegram", value: appState.services.telegram, good: appState.services.telegram == "Connected")
-                serviceRow("ElevenLabs", value: "Active", good: true)
-                serviceRow("AgentMail", value: "Active", good: true)
+                // Additional services auto-detected from gateway status
+                // Users can extend this with their own integrations
 
                 Divider().overlay(Theme.tileBorder)
 

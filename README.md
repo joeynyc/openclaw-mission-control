@@ -33,7 +33,7 @@ This isn't a static dashboard. **Every panel is live. Every button does somethin
 | Feature | Description |
 |---|---|
 | **Live Chat** | Full bidirectional chat with your agent via gateway WebSocket. Streaming responses, tool call indicators. |
-| **Service Monitoring** | Real-time status of Gateway, Telegram, ElevenLabs, AgentMail — with connection uptime tracking. |
+| **Service Monitoring** | Real-time status of Gateway and connected services — with connection uptime tracking. |
 | **Quick Actions** | One-click commands: search memory, web search, list cron jobs, ping nodes, spawn sub-agents, restart gateway. |
 | **Cron Management** | View and trigger scheduled jobs directly from the dashboard. |
 | **Model Routing** | See your active model, fallback chain, and available aliases at a glance. |
