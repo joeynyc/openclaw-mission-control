@@ -1,0 +1,548 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SparksMissionControl-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/sources",
+      "importPath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "SparksMissionControl",
+      "moduleOutputPath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/Modules/SparksMissionControl.swiftmodule",
+      "objects" : [
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.swift.o",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "SparksMissionControl_main",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "sparks_mission_control"
+      ],
+      "outputFileMapPath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/Modules/SparksMissionControl.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift",
+        "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift"
+      ],
+      "tempsPath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SparksMissionControl" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SparksMissionControl",
+      "-package-name",
+      "sparks_mission_control",
+      "-c",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift",
+      "-I",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "SparksMissionControl_main",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "sparks_mission_control",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SparksMissionControl" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl-entitlement.plist"
+    },
+    "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/sources"
+    },
+    "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.product/Objects.LinkFileList"
+    },
+    "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

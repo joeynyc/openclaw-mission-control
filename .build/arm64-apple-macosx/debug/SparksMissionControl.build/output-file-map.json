@@ -1,0 +1,117 @@
+{
+  "": {
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/master.swiftdeps"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/App.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/AppState.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConfig.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GatewayConnection.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/Theme.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ActivityLogCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ChatView.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/CronJobsCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/DashboardView.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/GlassCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/IdentityCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ModelRoutingCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/NodeCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/QuickActionsCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/ServicesCard.dia"
+  },
+  "/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift": {
+    "dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.d",
+    "object": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.swift.o",
+    "swiftmodule": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard~partial.swiftmodule",
+    "swift-dependencies": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.swiftdeps",
+    "diagnostics": "/Users/joeyrodriguez/clawd/output/sparks-mission-control/.build/arm64-apple-macosx/debug/SparksMissionControl.build/SkillsCard.dia"
+  }
+}

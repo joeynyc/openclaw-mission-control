@@ -1,0 +1,16 @@
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/App.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/AppState.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConfig.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Models/GatewayConnection.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Styles/Theme.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ActivityLogCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ChatView.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/CronJobsCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/DashboardView.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/GlassCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/IdentityCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ModelRoutingCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/NodeCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/QuickActionsCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/ServicesCard.swift
+/Users/joeyrodriguez/clawd/output/sparks-mission-control/Sources/SparksMissionControl/Views/SkillsCard.swift
