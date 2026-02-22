@@ -52,6 +52,18 @@ All colors, radii, and fonts live in `Theme` (`Styles/Theme.swift`). Never hardc
 - Primary model: `agents.defaults.model.primary`
 - Node name: `node.name`, `nodes.default.name`, `nodes.local.name`, or any `nodes.<key>.name`
 
+### Cron jobs
+
+Cron jobs are polled every 30s via `openclaw cron list --json` and stored in `AppState.cronJobs: [CronJob]`. Each `CronJob` has `name`, `schedule` (human-readable string), and `enabled`.
+
+**Parsing** (`parseCronJobs`): handles two JSON shapes from the gateway — a top-level array or `{ "jobs": [...] }`. Per-job schedule resolution checks in order:
+1. Object form: `schedule.expr` + optional `schedule.tz`
+2. String form: `schedule` or `cron` field
+
+**Display** (`cronToHuman`): converts raw cron expressions to natural language. Simple daily patterns (`0 8 * * *`) become `"Daily at 8:00 AM (EST)"`. Timezone identifiers are resolved to abbreviations via `TimeZone(identifier:).abbreviation()`. Non-daily or non-parseable expressions fall back to the raw string.
+
+**Manual trigger**: the Run button in `CronJobsCard` calls `triggerCronJob(_ name:)`, which first tries `openclaw cron run <name>` and falls back to posting a natural-language message via the agent hook.
+
 ### Skills discovery
 
 Skills are enumerated at launch from these directories (in order): `~/.openclaw/skills`, `~/.openclaw/clawd/skills`, `~/clawd/skills`, `/opt/homebrew/lib/node_modules/openclaw/skills`. A skill is any subdirectory containing a `SKILL.md` file.
