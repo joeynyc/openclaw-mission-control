@@ -102,6 +102,8 @@ final class AppState: ObservableObject {
     private var hooksTask: Task<Void, Never>?
 
     private var connectedSince: Date?
+    private var previousChannels: [String: String] = [:]
+    private var previousHooksStatus: String = ""
     // HTTP-only — no streaming message tracking needed
     private let estTimeZone = TimeZone(identifier: "America/New_York") ?? .current
 
@@ -490,6 +492,22 @@ final class AppState: ObservableObject {
             }
         }
         services.channels = detected
+
+        for (channel, status) in detected {
+            let prev = previousChannels[channel]
+            if prev != nil && prev != status {
+                let isUp = status == "Connected"
+                addActivity(
+                    title: "Service",
+                    detail: "\(channel.capitalized) \(isUp ? "connected" : "disconnected")",
+                    level: isUp ? .success : .error
+                )
+            }
+        }
+        for channel in previousChannels.keys where detected[channel] == nil {
+            addActivity(title: "Service", detail: "\(channel.capitalized) no longer detected", level: .warning)
+        }
+        previousChannels = detected
     }
 
     private func refreshHooksStatus() async {
@@ -514,6 +532,17 @@ final class AppState: ObservableObject {
         } else {
             services.hooksStatus = "OK"
         }
+
+        if !previousHooksStatus.isEmpty && services.hooksStatus != previousHooksStatus {
+            let level: ActivityEntry.Level
+            switch services.hooksStatus {
+            case "All Ready", "OK": level = .success
+            case "Not Ready": level = .warning
+            default: level = .error
+            }
+            addActivity(title: "Service", detail: "Hooks: \(services.hooksStatus)", level: level)
+        }
+        previousHooksStatus = services.hooksStatus
     }
 
     private func addActivity(title: String, detail: String, level: ActivityEntry.Level) {
