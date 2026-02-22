@@ -31,7 +31,7 @@ struct GatewayConfig: Sendable {
                 port: defaultPort,
                 gatewayToken: "",
                 hooksToken: "",
-                modelRouting: ModelRoutingInfo(primary: "claude-opus-4-6", fallbackModels: [], aliases: [:]),
+                modelRouting: ModelRoutingInfo(primary: "anthropic/claude-opus-4-6", fallbackModels: [], aliases: [:]),
                 nodeName: "Connected Node"
             )
         }
@@ -66,7 +66,7 @@ struct GatewayConfig: Sendable {
             paths: [
                 ["agents", "defaults", "model", "primary"],
             ],
-            defaultValue: "claude-opus-4-6"
+            defaultValue: "anthropic/claude-opus-4-6"
         )
 
         let fallbacks = stringArray(

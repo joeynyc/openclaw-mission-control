@@ -55,7 +55,7 @@ final class GatewayConnection: @unchecked Sendable {
 
     /// Real health check — HTTP GET to gateway
     func checkHealth() async -> Bool {
-        guard let url = URL(string: "http://\(host):\(port)/") else {
+        guard let url = URL(string: "http://\(host):\(port)/health") else {
             publishState(.disconnected)
             return false
         }
@@ -92,7 +92,7 @@ final class GatewayConnection: @unchecked Sendable {
 
     /// Send a message via /v1/chat/completions (synchronous, returns real response)
     func sendMessage(_ message: String) async throws -> String {
-        let model = primaryModel.isEmpty ? "claude-opus-4-6" : primaryModel
+        let model = primaryModel.isEmpty ? "anthropic/claude-opus-4-6" : primaryModel
         let payload: [String: Any] = [
             "model": model,
             "messages": [

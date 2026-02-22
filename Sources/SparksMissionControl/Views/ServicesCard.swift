@@ -7,9 +7,10 @@ struct ServicesCard: View {
         GlassCard(title: "Services", icon: "🟢") {
             VStack(alignment: .leading, spacing: 6) {
                 serviceRow("Gateway", value: appState.services.gateway, good: appState.services.gateway == "Running")
-                serviceRow("Telegram", value: appState.services.telegram, good: appState.services.telegram == "Connected")
-                // Additional services auto-detected from gateway status
-                // Users can extend this with their own integrations
+                serviceRow("Hooks", value: appState.services.hooksStatus, good: appState.services.hooksStatus == "All Ready" || appState.services.hooksStatus == "Ready" || appState.services.hooksStatus == "OK")
+                ForEach(appState.services.channels.keys.sorted(), id: \.self) { channel in
+                    serviceRow(channel.capitalized, value: appState.services.channels[channel] ?? "Unknown", good: appState.services.channels[channel] == "Connected")
+                }
 
                 Divider().overlay(Theme.tileBorder)
 

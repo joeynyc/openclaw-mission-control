@@ -48,7 +48,8 @@ struct CronJob: Identifiable {
 
 struct ServicesSnapshot {
     var gateway: String = "Stopped"
-    var telegram: String = "Unknown"
+    var hooksStatus: String = "Unknown"
+    var channels: [String: String] = [:]
     var uptime: TimeInterval?
 }
 
@@ -98,6 +99,7 @@ final class AppState: ObservableObject {
     private var servicesTask: Task<Void, Never>?
     private var cronTask: Task<Void, Never>?
     private var nodeTask: Task<Void, Never>?
+    private var hooksTask: Task<Void, Never>?
 
     private var connectedSince: Date?
     // HTTP-only — no streaming message tracking needed
@@ -130,6 +132,7 @@ final class AppState: ObservableObject {
             await refreshCronJobs()
             await refreshServicesStatus()
             await refreshNodeInfo()
+            await refreshHooksStatus()
         }
     }
 
@@ -138,6 +141,7 @@ final class AppState: ObservableObject {
         servicesTask?.cancel()
         cronTask?.cancel()
         nodeTask?.cancel()
+        hooksTask?.cancel()
         connection.disconnect()
     }
 
@@ -209,7 +213,7 @@ final class AppState: ObservableObject {
     }
 
     func quickActionPingNode() async {
-        await runAgentQuickAction(label: "Ping Node", prompt: "ping the Mac mini node")
+        await runAgentQuickAction(label: "Ping Node", prompt: "ping the \(nodeDisplayName) node")
     }
 
     func quickActionSpawnSubAgent(task: String) async {
@@ -451,6 +455,14 @@ final class AppState: ObservableObject {
                 try? await Task.sleep(for: .seconds(60))
             }
         }
+
+        hooksTask?.cancel()
+        hooksTask = Task {
+            while !Task.isCancelled {
+                await refreshHooksStatus()
+                try? await Task.sleep(for: .seconds(60))
+            }
+        }
     }
 
     private func refreshServicesStatus(fromText sourceText: String? = nil) async {
@@ -463,22 +475,45 @@ final class AppState: ObservableObject {
         }
 
         let lower = text.lowercased()
-        // Detect Telegram status from `openclaw status` output
-        if lower.contains("telegram") {
-            if lower.contains("telegram") && (lower.contains("connected") || lower.contains("✅") || lower.contains("running") || lower.contains("enabled") || lower.contains("polling") || lower.contains("active")) {
-                services.telegram = "Connected"
-            } else if lower.contains("telegram") && (lower.contains("disconnected") || lower.contains("❌") || lower.contains("stopped") || lower.contains("disabled")) {
-                services.telegram = "Disconnected"
+        services.gateway = isConnected ? "Running" : "Stopped"
+
+        let knownChannels = ["telegram", "discord", "slack", "whatsapp", "signal", "imessage"]
+        var detected: [String: String] = [:]
+        for channel in knownChannels {
+            guard lower.contains(channel) else { continue }
+            if lower.contains("connected") || lower.contains("✅") || lower.contains("running") || lower.contains("enabled") || lower.contains("polling") || lower.contains("active") || lower.contains(" ok ") || lower.contains(" on ") {
+                detected[channel] = "Connected"
+            } else if lower.contains("disconnected") || lower.contains("❌") || lower.contains("stopped") || lower.contains("disabled") || lower.contains(" off ") {
+                detected[channel] = "Disconnected"
             } else {
-                // If telegram appears in output at all and gateway is running, it's likely connected
-                services.telegram = isConnected ? "Connected" : "Unknown"
+                detected[channel] = isConnected ? "Connected" : "Unknown"
             }
-        } else {
-            // If openclaw status doesn't mention telegram but gateway is up, assume connected
-            services.telegram = isConnected ? "Connected" : "Offline"
+        }
+        services.channels = detected
+    }
+
+    private func refreshHooksStatus() async {
+        let result = await runOpenClaw(["hooks", "check"])
+        let lower = result.combined.lowercased()
+
+        if result.exitCode != 0 {
+            services.hooksStatus = "Error"
+            return
         }
 
-        services.gateway = isConnected ? "Running" : "Stopped"
+        // "Not ready: 0" means zero broken hooks — treat as all-good, not broken
+        let notReadyZero = lower.contains("not ready: 0") || lower.contains("not ready:0")
+        let hasNotReady = lower.contains("not ready") && !notReadyZero
+
+        if hasNotReady {
+            services.hooksStatus = "Not Ready"
+        } else if lower.contains("ready") {
+            services.hooksStatus = "All Ready"
+        } else if result.combined.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            services.hooksStatus = "Unknown"
+        } else {
+            services.hooksStatus = "OK"
+        }
     }
 
     private func addActivity(title: String, detail: String, level: ActivityEntry.Level) {
