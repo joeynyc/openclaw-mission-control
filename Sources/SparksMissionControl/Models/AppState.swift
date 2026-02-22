@@ -542,7 +542,14 @@ final class AppState: ObservableObject {
 
         return jobsArray.map { job in
             let name = (job["name"] as? String) ?? (job["id"] as? String) ?? "unnamed"
-            let schedule = (job["schedule"] as? String) ?? (job["cron"] as? String) ?? "(unknown schedule)"
+            let schedule: String
+            if let schedObj = job["schedule"] as? [String: Any],
+               let expr = schedObj["expr"] as? String {
+                let tz = schedObj["tz"] as? String ?? ""
+                schedule = tz.isEmpty ? expr : "\(expr) (\(tz))"
+            } else {
+                schedule = (job["schedule"] as? String) ?? (job["cron"] as? String) ?? "(unknown schedule)"
+            }
             let enabled = (job["enabled"] as? Bool) ?? ((job["status"] as? String)?.lowercased() == "enabled")
             return CronJob(name: name, schedule: schedule, enabled: enabled)
         }
