@@ -524,6 +524,34 @@ final class AppState: ObservableObject {
         }
     }
 
+    private func cronToHuman(_ expr: String, tz: String) -> String {
+        let parts = expr.split(separator: " ", omittingEmptySubsequences: true)
+        guard parts.count == 5,
+              let minute = Int(parts[0]),
+              let hour = Int(parts[1]) else {
+            return tz.isEmpty ? expr : "\(expr) (\(tz))"
+        }
+
+        let dom = String(parts[2])
+        let month = String(parts[3])
+        let dow = String(parts[4])
+
+        // Only handle the simple "daily" pattern (* * * for dom/month/dow)
+        guard dom == "*", month == "*", dow == "*" else {
+            return tz.isEmpty ? expr : "\(expr) (\(tz))"
+        }
+
+        let period = hour < 12 ? "AM" : "PM"
+        let hour12 = hour == 0 ? 12 : (hour > 12 ? hour - 12 : hour)
+        let timeStr = minute == 0
+            ? "Daily at \(hour12):00 \(period)"
+            : "Daily at \(hour12):\(String(format: "%02d", minute)) \(period)"
+
+        if tz.isEmpty { return timeStr }
+        let abbrev = TimeZone(identifier: tz)?.abbreviation() ?? tz
+        return "\(timeStr) (\(abbrev))"
+    }
+
     private func parseCronJobs(data: Data) -> [CronJob] {
         guard let object = try? JSONSerialization.jsonObject(with: data) else {
             return []
@@ -546,9 +574,11 @@ final class AppState: ObservableObject {
             if let schedObj = job["schedule"] as? [String: Any],
                let expr = schedObj["expr"] as? String {
                 let tz = schedObj["tz"] as? String ?? ""
-                schedule = tz.isEmpty ? expr : "\(expr) (\(tz))"
+                schedule = cronToHuman(expr, tz: tz)
+            } else if let rawExpr = (job["schedule"] as? String) ?? (job["cron"] as? String) {
+                schedule = cronToHuman(rawExpr, tz: "")
             } else {
-                schedule = (job["schedule"] as? String) ?? (job["cron"] as? String) ?? "(unknown schedule)"
+                schedule = "(unknown schedule)"
             }
             let enabled = (job["enabled"] as? Bool) ?? ((job["status"] as? String)?.lowercased() == "enabled")
             return CronJob(name: name, schedule: schedule, enabled: enabled)
